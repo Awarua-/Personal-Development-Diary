@@ -32,4 +32,15 @@ Publishing these SLO's is useful as it means that users don't get a false sense 
 
 Interesting article on Chubby, Chubby was too reliable which lead others to depend on it, so when it did happen to go down people would get mad. Chubby frequently exceeded its SLO's, so in response to this SRE team would perform syntetic outages of Chubby, so that service owners would learn to not rely on it too much.
 
-Service Level Agreement (SLA): Usually contractual between the company and end user, usually has SLO's in it. There are also repercussions, financial reputation or otherwise for not meeting SLO's
+Service Level Agreement (SLA): Usually contractual between the company and end user, usually has SLO's in it. There are also repercussions, financial, reputation or otherwise for not meeting SLO's
+
+
+Have tighter internal SLOs than the advertised SLOs
+If the service is performing better than advertised, as in its more reliabile and others come to depend on its over reliability, sabotage the service so that it falls back to its SLO
+
+
+13/10/17
+
+SRE Book chapter 5, Eliminating Toil
+
+Toil describes tasks which could me manual, repetitive, automatable, interupt-drive reactive, ha no enduring value. Ideally an SRE's time spend on toil tasks should not exceed 50% when averaged over a quartar, as toil tends to be spiky some weeks you're doing a lot of toil tasks, and other weeks none.
